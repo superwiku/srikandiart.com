@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SrikandiArt - Contact Us - Percetakan Tasikmalaya</title>
+  <meta content="Percetakan Tasikmalaya Jawa Barat" name="description">
+  <meta content="medali nametag plakat map ijazah map raport standing banner sticker banner backlite stempel" name="keywords">
+  <meta content="medali nametag plakat map ijazah map raport standing banner sticker banner backlite stempel" name="title">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script>
+    function SubForm (){
+         var v = grecaptcha.getResponse();
+         if(v.length == 0){
+            document.getElementById('peringatan').innerHTML="Captcha tidak boleh kosong";
+            return false;
+        }else{
+            document.getElementById('peringatan').innerHTML="Terimakasih";
+            $.ajax({
+            url:'https://api.apispreadsheets.com/data/3269/',
+            type:'post',
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("Pesan anda berhasil direkam, terimakasih");
+                document.getElementById('myForm').reset();
+            },
+            error: function(){
+                alert("Pengiriman pesan gagal, silahkan cek koneksi internet anda")
+            }
+            });
+           
+        }
+    }
+ </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        $(document).ready(function(){
+            $("#clients").load("clients.html");
+            $("#footer").load("footerindex.html");
+            $(".preloader").fadeOut();
+        });
+    </script>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="loader">
+        <p>Harap Tunggu</p>
+    </div>
+  </div>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i><a href="mailto:srikandiart777@gmail.com">srikandiart777@gmail.com</a>
+        <i class="icofont-phone"></i> <a href="https://wa.me/+6282317766782"> +62 823 177 66 782</a>
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+      
+      <div class="logo mr-auto">
+        <img src="assets/img/srikandi-logo.png" class="img-responsive">       
+      </div>
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html">Srikandi Art</a></h1>       
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block" id="top">
+        <ul>
+          <li><a href="index.html">Home</a></li> 
+          <li class="drop-down"><a href="">Cetak Digital</a>
+            <ul>
+              <li><a href="digital/spanduk.html"><img src="digital/assets/img/digital/spanduk.jpg" width="75" height="75" class="img-responsive"/>Spanduk</a></li>
+              <li><a href="digital/sticker.html"><img src="digital/assets/img/digital/sticker.jpg" width="75" height="75" class="img-responsive"/>Sticker</a></li>
+              <li><a href="digital/standingbanner.html"><img src="digital/assets/img/digital/standbanner.jpg" width="75" height="75" class="img-responsive"/>Stand Banner</a></li>
+              <li><a href="digital/kain.html"><img src="digital/assets/img/digital/kain.jpg" width="75" height="75" class="img-responsive"/>Kain</a></li>              
+            </ul>
+          </li>
+          <li class="drop-down"><a href="">Cetak Offset</a>
+            <ul>
+              <li><a href="offset/undangan.html"><img src="offset/assets/img/offset/undangan.jpg" width="70" height="70" class="img-responsive"/>Undangan</a></li>
+              <li><a href="offset/kartunama.html"><img src="offset/assets/img/offset/namecard.jpg" width="70" height="70" class="img-responsive"/>Kartu Nama</a></li>
+              <li><a href="offset/bon.html"><img src="offset/assets/img/offset/bon.jpg" width="70" height="70" class="img-responsive"/>Kuitansi/Bon</a></li>
+              <li><a href="offset/kemasan.html"><img src="offset/assets/img/offset/dus.jpg" width="70" height="70" class="img-responsive"/>Kemasan</a></li>
+              <li><a href="offset/brosur.html"><img src="offset/assets/img/offset/brosur.jpg" width="70" height="70" class="img-responsive"/>Brosur</a></li>
+            </ul>
+          </li>
+          <li class="drop-down"><a href="">Cetak Sablon</a>
+            <ul>
+              <li><a href="sablon/kaos.html"><img src="sablon/assets/img/sablon/kaos/kaosmenu.jpg" width="75" height="75" class="img-responsive"/>Kaos</a></li>
+              <li><a href="sablon/plastik.html"><img src="sablon/assets/img/sablon/plastik/plastikmenu.jpg" width="75" height="75" class="img-responsive"/>Plastik</a></li>
+              <li><a href="sablon/sterofoam.html"><img src="sablon/assets/img/sablon/sterofoam/sterofoammenu.jpg" width="75" height="75" class="img-responsive"/>Sterofoam</a></li>
+              <li><a href="sablon/payung.html"><img src="sablon/assets/img/sablon/payung/payungmenu.jpg" width="75" height="75" class="img-responsive"/>Payung</a></li>             
+            </ul>
+          </li>
+          <li class="drop-down"><a href="">Cetak Kreatif</a>
+            <ul>
+              <li><a href="kreatif/nametag.html"><img src="kreatif/assets/img/kreatif/nametag.jpg" width="60" height="60" class="img-responsive"/>Nametag</a></li>
+              <li><a href="kreatif/plakat.html"><img src="kreatif/assets/img/kreatif/plakat.jpg" width="60" height="60" class="img-responsive"/>Plakat</a></li>
+              <li><a href="kreatif/pin.html"><img src="kreatif/assets/img/kreatif/pin.jpg" width="60" height="60" class="img-responsive"/>Pin</a></li>
+              <li><a href="kreatif/medali.html"><img src="kreatif/assets/img/kreatif/medali.jpg" width="60" height="60" class="img-responsive"/>Medali</a></li>
+              <li><a href="kreatif/map.html"><img src="kreatif/assets/img/kreatif/map.jpg" width="60" height="60" class="img-responsive"/>Map Raport</a></li>
+              <li><a href="kreatif/souvenir.html"><img src="kreatif/assets/img/kreatif/tumbler.jpg" width="60" height="60" class="img-responsive"/>Souvenir</a></li>
+              
+            </ul>
+          </li>          
+          <li class="drop-down"><a href="">Stempel</a>
+            <ul>
+              <li><a href="stempel/flash.html"><img src="stempel/assets/img/stempel/warna.jpg" width="75" height="75" class="img-responsive"/>Stempel Flash</a></li>
+              <li><a href="stempel/runaflek.html"><img src="stempel/assets/img/stempel/kayu.jpg" width="75" height="75" class="img-responsive"/>Stempel Kayu</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Contact</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <div class="map-section">
+      <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.9537670358086!2d108.11752141487648!3d-7.359079574452561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f543583663505%3A0x72dac15501e617c7!2sSrikandi%20Art!5e0!3m2!1sid!2sid!4v1603234697355!5m2!1sid!2sid"  frameborder="20px" allowfullscreen></iframe>
+    </div>
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="row justify-content-center" data-aos="fade-up">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="icofont-google-map"></i>
+                  <h4>Lokasi:</h4>
+                  <p>Singaparna-Tasikmalaya<br>Jawa Barat</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="icofont-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>srikandiart777@gmail.com</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="icofont-phone"></i>
+                  <h4>Call:</h4>
+                  <p><a href="https://wa.me/+6282317766782"> +62 823 177 66 782</a><br><a href="https://wa.me/+6287750528552"> +62 877 5052 8552</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+            <form id="myForm" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama anda" data-rule="minlen:3" data-msg="Nama minimal 3 karakter" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email anda" data-rule="email" data-msg="Masukkan email yang valid" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Judul" data-rule="minlen:1" data-msg="Judul tidak boleh kosong" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Tuliskan sesuatu kepada kami" placeholder="Pesan"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="g-recaptcha" data-sitekey="6Lcj2-AZAAAAANFPlElovzmbrmzM6zYkreeFOrhb"></div>
+              <div class="text-center">
+                  <button type="submit" onclick="SubForm()">Kirim Pesan</button>
+                  <p id="peringatan"></p>
+              </div>
+              <div class="text-center">
+                  <p id="peringatan"></p>
+              </div>
+              
+            </form>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      
+    </section><!-- End Our Clients Section -->
+
+  </main><!-- End #main -->
+
+   <!-- ======= Footer ======= -->
+  <footer id="footer">
+        
+      </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
